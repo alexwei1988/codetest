@@ -20,4 +20,4 @@ class ChangeRoleForm(forms.Form):
 class CreateUserForm(forms.Form):
 	uname = forms.CharField(max_length=100,label="User name")
 	newpwd= forms.CharField(max_length=100,label="password",widget=forms.PasswordInput)	
-    dbname = forms.ModelChoiceField(queryset=DbList.objects.all(),label="Db name",to_field_name="connect_str")
+	dbname = forms.ModelChoiceField(queryset=DbList.objects.all(),label="Db name",to_field_name="connect_str")

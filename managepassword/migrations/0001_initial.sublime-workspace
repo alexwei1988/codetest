@@ -1,0 +1,206 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Db",
+				"DbList"
+			],
+			[
+				"conn",
+				"connect_str"
+			],
+			[
+				"chang",
+				"changepwd"
+			],
+			[
+				"ht",
+				"HttpResponseRedirect"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Build: New Build System"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/opt/apps/python_code/simple-socketserver.py",
+		"/opt/apps/python_code/simple_socket.py",
+		"/opt/apps/python_code/socket_client.py",
+		"/usr/lib64/python2.7/socket.py",
+		"/opt/apps/UserRoleMT/managepassword/pythoncode/dbopt.py",
+		"/opt/apps/UserRoleMT/managepassword/apps.py",
+		"/opt/apps/UserRoleMT/managepassword/admin.py",
+		"/opt/apps/UserRoleMT/managepassword/forms.py",
+		"/opt/apps/UserRoleMT/managepassword/templates/login.html",
+		"/opt/apps/UserRoleMT/managepassword/templates/change_password.html",
+		"/opt/apps/UserRoleMT/managepassword/models.py",
+		"/opt/apps/UserRoleMT/managepassword/views.py",
+		"/opt/apps/UserRoleMT/managepassword/__init__.py",
+		"/opt/apps/UserRoleMT/UserRoleMT/settings.py",
+		"/opt/apps/UserRoleMT/UserRoleMT/urls.py",
+		"/opt/apps/UserRoleMT/managepassword/tests.py",
+		"/opt/apps/UserRoleMT/UserRoleMT/__init__.py",
+		"/opt/apps/UserRoleMT/managepassword/migrations/__init__.py"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			")\n",
+			"BASE_DIR",
+			"result",
+			"  "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "0001_initial.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 198.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
