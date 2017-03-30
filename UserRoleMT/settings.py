@@ -82,7 +82,7 @@ DATABASES = {
         'NAME':  'usermanager',
 	'USER':'app_user',
 	'PASSWORD':'nishi2b',
-	'HOST':'localhost',
+	'HOST':'10.224.50.38',
 	'PORT':'3306',
     }
 }
