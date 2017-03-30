@@ -1,6 +1,7 @@
 import sys
 
-sys.path.append('/opt/apps/UserRoleMT/managepassword/pythoncode')
+sys.path.append(sys.path[0]+'/managepassword/pythoncode')
+print sys.path[0]
 
 import dbopt
 from dbopt import Dbcon
