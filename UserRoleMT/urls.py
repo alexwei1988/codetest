@@ -21,5 +21,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^login/', views.login,name='login'),
     url(r'^changepwd/', views.change_password,name='changepwd'),
-
+    url(r'^grantrole/',views.grant_role,name='grantrole'),
 ]

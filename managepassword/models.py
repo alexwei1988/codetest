@@ -17,6 +17,9 @@ class AllowedRoles(models.Model):
         managed = False
         db_table = 'allowed_roles'
 
+    def __str__(self):
+        return self.role_name
+
 
 class AuthGroup(models.Model):
     name = models.CharField(unique=True, max_length=80)

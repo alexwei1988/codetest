@@ -13,7 +13,7 @@ class ChangePasswordForm(forms.Form):
 
 class ChangeRoleForm(forms.Form):
 	uname = forms.CharField(max_length=100,label="User name")
-	rolename = forms.ModelChoiceField(queryset=AllowedRoles.objects.all(),label="avalible rows",to_field_name="role_name")
+	rolename = forms.ModelChoiceField(queryset=AllowedRoles.objects.all(),label="avalible roles",to_field_name="role_name")
 	dbname = forms.ModelChoiceField(queryset=DbList.objects.all(),label="Db name",to_field_name="connect_str")
 
 

@@ -17,10 +17,10 @@ def login(request):
 		if form.is_valid():
 			username=form.cleaned_data['uname']
 			pwd=form.cleaned_data['pwd']
-			mu=Manageruser.objects.all();
-			result=mu.filter(uname=username,password=pwd).count()
+			mu=Manageruser.objects.all();  ##get all manageruser table data 
+			result=mu.filter(uname=username,password=pwd).count() # check matched user count.
 			if result >=1 :
-				request.session['log_in']=True
+				request.session['log_in']=True # mark your are logedin
 				request.session.set_expiry(30)
 				return  render(request,'navigator.html')
 			else :
@@ -42,7 +42,7 @@ def change_password(request):
 					dblist=DbList.objects.all();
 					username=form.cleaned_data['uname']
 					password=form.cleaned_data['newpwd']
-					conn=Dbcon('operation_user','nishi2b',form.data['dbname'])
+					conn=Dbcon('operation_user','nishi2b',form.data['dbname'])					
 					conn.changepassword(username,password)
 					return HttpResponse('password change successful')
 
@@ -68,7 +68,7 @@ def create_user(request):
 					password=form.cleaned_data['newpwd']
 					conn=Dbcon('operation_user','nishi2b',form.data['dbname'])
 					conn.changepassword(username,password)
-					return HttpResponse('password change successful')
+					return HttpResponse('password change successful !!d<a href="www.baidu.com">back to office</a>')
 
 			else:
 				form = ChangePasswordForm()				
@@ -77,4 +77,30 @@ def create_user(request):
 		else:
 			form = LoginForm()
 			return HttpResponseRedirect(reverse('login'))
+
+def grant_role(request):
+
+		if request.session.get('log_in',False):
+			
+			if request.method == 'POST':
+
+				form = ChangeRoleForm(request.POST)
+
+				if form.is_valid():
+					dblist=DbList.objects.all();
+					username=form.cleaned_data['uname']
+					rolename=form.cleaned_data['rolename']					
+					conn=Dbcon('operation_user','nishi2b',form.data['dbname'])
+					conn.grant_role(str(username),str(rolename))
+
+					return HttpResponse('role '+str(rolename)+' granted to '+str(username)+' !!d<a href="www.baidu.com">back to office</a>')
+
+			else:
+				form = ChangeRoleForm()				
+				return render(request,'grant_role.html',{'form':form})
+
+		else:
+			form = LoginForm()
+			return HttpResponseRedirect(reverse('login'))
+
 

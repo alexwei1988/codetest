@@ -1,1 +1,5 @@
-grant_role.html
+<form method='post'>
+	{% csrf_token%}
+	{{form}}
+	<input type="submit" value="submit">	
+</form>
